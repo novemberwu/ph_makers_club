@@ -174,20 +174,27 @@
 
         .slogan-box {
             margin-top: 50px;
-            padding: 30px;
+            padding: 40px 30px;
             text-align: center;
-            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            background: linear-gradient(135deg, #1a365d 0%, #2c5282 50%, #3182ce 100%);
             color: white;
-            border-radius: 12px;
-            box-shadow: var(--shadow);
+            border-radius: 16px;
+            box-shadow: 0 10px 25px -5px rgba(26, 54, 93, 0.4);
+            /* Ensure background prints correctly */
+            print-color-adjust: exact;
+            -webkit-print-color-adjust: exact;
+            border: 1px solid rgba(255, 255, 255, 0.1);
         }
 
         .slogan-text {
-            font-size: 1.8em;
-            font-weight: bold;
-            letter-spacing: 2px;
+            font-size: 2.2em;
+            font-weight: 800;
+            letter-spacing: 4px;
             margin: 0;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+            text-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            background: linear-gradient(to bottom, #ffffff 0%, #e2e8f0 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
 
         .slogan-sub {
@@ -213,6 +220,7 @@
             .container { box-shadow: none; width: 100%; max-width: 100%; padding: 0; }
             .action-plan { page-break-before: always; color: black; background: white; border: 1px solid #ccc; }
             .action-plan h3 { color: black; }
+            .slogan-box { background: var(--primary-color) !important; color: white !important; }
         }
     </style>
 </head>
@@ -240,7 +248,7 @@
 
     <div class="reason-card">
         <div class="reason-title"><span>2</span> 完美契合学术刚需</div>
-        <p>这个创客空间将和AP课程深入融合。创客空间讲为艺术、数学、物理、计算机课程的提供跨学科的实践场景，让学生能够从“做”中学。我们会帮助同学将社会服务（Service）与科技造物结合。这不仅能让学生的 CAS 报告质量产生质的飞跃，更是招生官眼中最具含金量的真实项目（Authentic Learning）。</p>
+        <p>社团创客空间将和AP课程深入融合。它为艺术、数学、物理、计算机课程提供跨学科的实践场景，让学生能够从“做”中学。我们会帮助同学将社会服务（Service）与艺术、科技造物结合。这不仅能让学生的论文质量产生质的飞跃，更是招生官眼中最具含金量的真实项目（Authentic Learning）。</p>
          <div class="quote-box">
             “平和学生要成为T字型人才。既有学术的广度，又能深入学科、解决实际问题。”
         </div>
