@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>平和高中AP部创客社团成立提案</title>
+    <style>
+        :root {
+            --primary-color: #1a365d;
+            --secondary-color: #2c5282;
+            --accent-color: #3182ce;
+            --bg-color: #f7fafc;
+            --text-color: #2d3748;
+            --white: #ffffff;
+            --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+
+        body {
+            font-family: 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            background: var(--white);
+            padding: 60px;
+            box-shadow: var(--shadow);
+            border-radius: 12px;
+        }
+
+        header {
+            border-bottom: 4px solid var(--primary-color);
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+        }
+
+        h1 {
+            color: var(--primary-color);
+            font-size: 2.4em;
+            margin: 0;
+            letter-spacing: -0.5px;
+        }
+
+        .subtitle {
+            color: var(--accent-color);
+            font-size: 1.1em;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .executive-summary {
+            background: #ebf8ff;
+            padding: 25px;
+            border-left: 6px solid var(--accent-color);
+            margin-bottom: 40px;
+            border-radius: 4px;
+        }
+
+        h2 {
+            color: var(--secondary-color);
+            border-bottom: 1px solid #e2e8f0;
+            padding-bottom: 10px;
+            margin-top: 40px;
+        }
+
+        .reason-card {
+            margin-bottom: 30px;
+            padding: 20px;
+            border-radius: 8px;
+            background: #fff;
+            border: 1px solid #edf2f7;
+            transition: transform 0.2s;
+        }
+
+        .reason-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+
+        .reason-title {
+            font-weight: bold;
+            font-size: 1.2em;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .reason-title span {
+            background: var(--accent-color);
+            color: white;
+            border-radius: 50%;
+            width: 28px;
+            height: 28px;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 12px;
+            font-size: 0.8em;
+        }
+
+        .quote-box {
+            font-style: italic;
+            color: #4a5568;
+            background: #f8fafc;
+            padding: 15px;
+            border-radius: 6px;
+            margin-top: 10px;
+            border: 1px dashed #cbd5e0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-size: 0.95em;
+        }
+
+        th {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: left;
+            padding: 12px;
+        }
+
+        td {
+            padding: 12px;
+            border-bottom: 1px solid #edf2f7;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f8fafc;
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-size: 0.8em;
+            font-weight: bold;
+            margin-right: 5px;
+        }
+
+        .tag-high { background: #fed7d7; color: #9b2c2c; }
+        .tag-med { background: #feebc8; color: #9c4221; }
+        .tag-low { background: #c6f6d5; color: #22543d; }
+
+        .action-plan {
+            background: #2d3748;
+            color: white;
+            padding: 30px;
+            border-radius: 8px;
+            margin-top: 50px;
+        }
+
+        .action-plan h3 {
+            color: #63b3ed;
+            margin-top: 0;
+        }
+
+        .footer {
+            margin-top: 60px;
+            text-align: center;
+            font-size: 0.85em;
+            color: #a0aec0;
+            border-top: 1px solid #e2e8f0;
+            padding-top: 20px;
+        }
+
+        @media print {
+            body { background: white; }
+            .container { box-shadow: none; width: 100%; max-width: 100%; padding: 0; }
+            .action-plan { page-break-before: always; color: black; background: white; border: 1px solid #ccc; }
+            .action-plan h3 { color: black; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <p class="subtitle">Maker Club Strategic Proposal</p>
+        <h1>创客社团：平和机器人教育生态建设方案</h1>
+    </header>
+
+    <div class="executive-summary">
+        <strong>核心摘要：</strong> 本方案旨在填补学校现有 FRC 精英社团之外的“普及型创新”空白。通过分阶段投入、跟AP课程深度融合及视觉化成果展示，构建一个服务于 80% 师生的科技造物平台。
+    </div>
+
+    <h2>一、 四大战略理由</h2>
+
+    <div class="reason-card">
+        <div class="reason-title"><span>1</span> 填补“创新金字塔”底层空白</div>
+        <p>FRC 是金字塔尖的精英俱乐部，而创客社团是塔基。目前 AP 学部约有 70 名学生渴望技术实践但难以深度参与 FRC 繁重的赛季项目。我们需要一个零门槛、多学科的普惠平台。</p>
+        <div class="quote-box">
+            “我们要把科技变成像画笔一样的通用工具，让艺术生、人文生、理科生都能动手解决问题，实现教育普惠。”
+        </div>
+    </div>
+
+    <div class="reason-card">
+        <div class="reason-title"><span>2</span> 完美契合学术刚需</div>
+        <p>这个创客空间将和AP课程深入融合。创客空间讲为艺术、数学、物理、计算机课程的提供跨学科的实践场景，让学生能够从“做”中学。我们会帮助同学将社会服务（Service）与科技造物结合。这不仅能让学生的 CAS 报告质量产生质的飞跃，更是招生官眼中最具含金量的真实项目（Authentic Learning）。</p>
+         <div class="quote-box">
+            “平和学生要成为T字型人才。既有学术的广度，又能深入学科、解决实际问题。”
+        </div>
+    </div>
+
+    <div class="reason-card">
+        <div class="reason-title"><span>3</span> 打造校园“未来教育”活景观</div>
+        <p>每一场校园开放日（Open Day），家长看重的不仅是硬件，更是学生动态的创造力。创客空间将陈列交互艺术装置、智能校园、3D 打印模型，成为学校招生最具说服力的广告。</p>
+    </div>
+
+    <div class="reason-card">
+        <div class="reason-title"><span>4</span> 阶段性对赌：降低财务风险</div>
+        <p>采用“里程碑式拨款”模式。不一次性投入巨资，而是通过“阶段成果解锁预算”，确保资金每一分都转化为学生的作品集（Portfolio）和学术变现。</p>
+    </div>
+
+    <h2>二、 分阶段预算规划 (Milestone Funding)</h2>
+    <p>为了优化资金使用效率，我们建议将预算分为以下三个解锁阶段：</p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>阶段</th>
+                <th>核心目标</th>
+                <th>推荐器材清单</th>
+                <th>预估预算 (RMB)</th>
+                <th>理由/用途</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>第一阶段 (启动期)</strong></td>
+                <td>普及入门 & 电子原型</td>
+                <td>
+                    1. Arduino Uno / ESP32 基础套装 x 20<br>
+                    2. 传感器扩展包 (37合1) x 5<br>
+                    3. 树莓派 5 8G * 5 <br>
+                    3. 基础电子工具（焊台、万用表、螺丝刀）
+                </td>
+                <td>¥15,000 - ¥18,000</td>
+                <td>覆盖80%普通学生的“零基础”工作坊，支持基础科创项目。</td>
+            </tr>
+            <tr>
+                <td><strong>第二阶段 (升级期)</strong></td>
+                <td>数字化建模 & 景观展示</td>
+                <td>
+                    1. VEX V5 基础结构和动力套件 * 2 18K<br>
+                    2. 大象机器人myCobot 280 pi 六轴入门机械手臂 * 1 13K<br>
+                    2. 拓竹 (Bambu Lab) P1S 3D打印机 x 2 6K<br>
+                    3. 桌面级激光切割机 (xTool / Beambox) x 3K<br>
+                    4. 耗材（PLA线材、椴木板、合金）
+
+                </td>
+                <td>¥41,000 - ¥51,000</td>
+                <td><strong>视觉化成果</strong>可编程机器人、集成化机械臂、3D打印和激光切割能快速产出精美作品，用于校园展示和招生季门面。</td>
+            </tr>
+            <tr>
+                <td><strong>第三阶段 (成熟期)</strong></td>
+                <td>AI 机器人 & 进阶竞赛</td>
+                <td>
+                    1. 大疆 RoboMaster EP 套装 x 2<br>
+                    2. 深度相机/边缘计算模块 Intel Intel RealSense D435i 立体实感摄像头 * 2 <br>
+                    3. 气动/高级传动组件
+                </td>
+                <td>¥20,000 - ¥50,000</td>
+                <td>满足高阶科创比赛需求，进行图像识别和自动驾驶研究。</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>三、 场地规划思路</h2>
+    <p>建议将[某楼闲置教室/角落]划分为四个核心功能区：</p>
+    <ul>
+        <li><strong>电子焊接区：</strong> 严格遵循安全标准，进行电路原型开发。</li>
+        <li><strong>3D 打印加工区：</strong> 数字化造物的“核心引擎”。</li>
+        <li><strong>头脑风暴讨论区：</strong> 配备白板，进行跨学科方案碰撞。</li>
+        <li><strong>高光成果展示墙：</strong> 长期陈列学生作品，支持校园导览。</li>
+    </ul>
+
+ 
+
+    <div class="footer">
+        © 2026 平和AP创客社团筹备小组 | 赋能下一代创造者
+    </div>
+</div>
+
+</body>
+</html>
