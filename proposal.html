@@ -172,6 +172,42 @@
             padding-top: 20px;
         }
 
+        .slogan-box {
+            margin-top: 50px;
+            padding: 30px;
+            text-align: center;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+        }
+
+        .slogan-text {
+            font-size: 1.8em;
+            font-weight: bold;
+            letter-spacing: 2px;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+
+        .slogan-sub {
+            font-size: 1em;
+            opacity: 0.9;
+            margin-top: 10px;
+        }
+
+        .diagram-container {
+            margin: 40px 0;
+            text-align: center;
+            overflow-x: auto;
+        }
+        .diagram-container svg {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+        }
+
         @media print {
             body { background: white; }
             .container { box-shadow: none; width: 100%; max-width: 100%; padding: 0; }
@@ -184,8 +220,8 @@
 
 <div class="container">
     <header>
-        <p class="subtitle">Maker Club Strategic Proposal</p>
-        <h1>创客社团：平和机器人教育生态建设方案</h1>
+        <p class="subtitle">Makers' Club Strategic Proposal</p>
+        <h1>平和创客社团</h1>
     </header>
 
     <div class="executive-summary">
@@ -216,9 +252,11 @@
     </div>
 
     <div class="reason-card">
-        <div class="reason-title"><span>4</span> 阶段性对赌：降低财务风险</div>
+        <div class="reason-title"><span>4</span> 阶段性交付：降低财务风险</div>
         <p>采用“里程碑式拨款”模式。不一次性投入巨资，而是通过“阶段成果解锁预算”，确保资金每一分都转化为学生的作品集（Portfolio）和学术变现。</p>
     </div>
+
+    
 
     <h2>二、 分阶段预算规划 (Milestone Funding)</h2>
     <p>为了优化资金使用效率，我们建议将预算分为以下三个解锁阶段：</p>
@@ -282,13 +320,96 @@
         <li><strong>头脑风暴讨论区：</strong> 配备白板，进行跨学科方案碰撞。</li>
         <li><strong>高光成果展示墙：</strong> 长期陈列学生作品，支持校园导览。</li>
     </ul>
+    <div class="diagram-container">
+        <svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Filter for hand-drawn/wobbly effect -->
+    <filter id="handDrawn" x="-10%" y="-10%" width="120%" height="120%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.05" numOctaves="3" result="noise" />
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="3" xChannelSelector="R" yChannelSelector="G" />
+    </filter>
+    
+    <!-- Marker for arrows -->
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#4A5568" />
+    </marker>
+  </defs>
 
- 
+  <!-- Background "Paper" -->
+  <rect width="800" height="600" fill="#FFFDF0" />
+  
+  <!-- Outer Walls -->
+  <rect x="50" y="50" width="700" height="500" fill="none" stroke="#2D3748" stroke-width="3" filter="url(#handDrawn)" />
+
+  <!-- Electronic Soldering Area (Top Left) -->
+  <g filter="url(#handDrawn)">
+    <rect x="70" y="70" width="250" height="150" fill="#EBF8FF" stroke="#2B6CB0" stroke-width="2" stroke-dasharray="5,5" />
+    <text x="80" y="95" font-family="Comic Sans MS, cursive, sans-serif" font-size="18" fill="#2B6CB0">电子焊接区</text>
+    <text x="80" y="115" font-family="Arial" font-size="12" fill="#4A5568">Electronic Soldering Area</text>
+    <!-- Benches -->
+    <rect x="80" y="130" width="230" height="80" fill="none" stroke="#4A5568" stroke-width="2" />
+    <circle cx="110" cy="170" r="10" fill="none" stroke="#4A5568" stroke-width="1" /> <!-- Soldering station -->
+    <circle cx="160" cy="170" r="10" fill="none" stroke="#4A5568" stroke-width="1" />
+    <circle cx="210" cy="170" r="10" fill="none" stroke="#4A5568" stroke-width="1" />
+  </g>
+
+  <!-- 3D Printing Area (Top Right) -->
+  <g filter="url(#handDrawn)">
+    <rect x="480" y="70" width="250" height="150" fill="#F0FFF4" stroke="#2F855A" stroke-width="2" stroke-dasharray="5,5" />
+    <text x="490" y="95" font-family="Comic Sans MS, cursive, sans-serif" font-size="18" fill="#2F855A">3D 打印加工区</text>
+    <text x="490" y="115" font-family="Arial" font-size="12" fill="#4A5568">3D Printing &amp; Fabrication</text>
+    <!-- Printer Units -->
+    <rect x="500" y="130" width="50" height="50" fill="none" stroke="#4A5568" stroke-width="2" />
+    <rect x="570" y="130" width="50" height="50" fill="none" stroke="#4A5568" stroke-width="2" />
+    <rect x="640" y="130" width="50" height="50" fill="none" stroke="#4A5568" stroke-width="2" />
+  </g>
+
+  <!-- Brainstorming Discussion Area (Bottom Left) -->
+  <g filter="url(#handDrawn)">
+    <rect x="70" y="350" width="250" height="180" fill="#FFF5F5" stroke="#C53030" stroke-width="2" stroke-dasharray="5,5" />
+    <text x="80" y="375" font-family="Comic Sans MS, cursive, sans-serif" font-size="18" fill="#C53030">头脑风暴讨论区</text>
+    <text x="80" y="395" font-family="Arial" font-size="12" fill="#4A5568">Brainstorming &amp; Strategy</text>
+    <!-- Round Table -->
+    <circle cx="195" cy="460" r="45" fill="none" stroke="#4A5568" stroke-width="2" />
+    <!-- Whiteboard -->
+    <rect x="75" y="440" width="10" height="80" fill="#EDF2F7" stroke="#4A5568" stroke-width="1" />
+  </g>
+
+  <!-- Showcase Zone (Bottom Right) -->
+  <g filter="url(#handDrawn)">
+    <rect x="480" y="350" width="250" height="180" fill="#FFFFF0" stroke="#B7791F" stroke-width="2" stroke-dasharray="5,5" />
+    <text x="490" y="375" font-family="Comic Sans MS, cursive, sans-serif" font-size="18" fill="#B7791F">高光成果展示区</text>
+    <text x="490" y="395" font-family="Arial" font-size="12" fill="#4A5568">High-light Showcase Zone</text>
+    <!-- Shelves -->
+    <line x1="490" y1="420" x2="720" y2="420" stroke="#4A5568" stroke-width="2" />
+    <line x1="490" y1="460" x2="720" y2="460" stroke="#4A5568" stroke-width="2" />
+    <line x1="490" y1="500" x2="720" y2="500" stroke="#4A5568" stroke-width="2" />
+  </g>
+
+  <!-- Central Open Space -->
+  <g filter="url(#handDrawn)">
+    <text x="350" y="300" font-family="Comic Sans MS, cursive, sans-serif" font-size="22" fill="#718096" opacity="0.5">开放式协作空间</text>
+    <text x="365" y="325" font-family="Arial" font-size="14" fill="#718096" opacity="0.5">Open Collaboration Space</text>
+  </g>
+
+  <!-- Title -->
+  <text x="400" y="35" text-anchor="middle" font-family="Comic Sans MS, cursive, sans-serif" font-size="28" font-weight="bold" fill="#1A365D" filter="url(#handDrawn)">
+    平和高中创客空间规划草图
+  </text>
+  <text x="400" y="580" text-anchor="middle" font-family="Arial" font-size="14" fill="#A0AEC0">
+    © 2026 Makers' Club Planning Blueprint v1.0
+  </text>
+
+</svg>
+    </div>
+    <div class="slogan-box">
+        <div class="slogan-text">赋能下一代创造者</div>
+    </div>
 
     <div class="footer">
-        © 2026 平和AP创客社团筹备小组 | 赋能下一代创造者
+        © 2026 平和AP创客社团 | PHAP Makers'Club
     </div>
-</div>
+    </div>
 
-</body>
+    </body>
 </html>
