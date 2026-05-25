@@ -133,8 +133,47 @@
             border-bottom: 1px solid #edf2f7;
         }
 
+        th:nth-child(1), td:nth-child(1) { width: 15%; }
+        th:nth-child(2), td:nth-child(2) { width: 40%; }
+        th:nth-child(3), td:nth-child(3) { width: 30%; }
+        th:nth-child(4), td:nth-child(4) { width: 15%; }
+
         tr:nth-child(even) {
             background-color: #f8fafc;
+        }
+
+        .photo-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+            margin: 30px 0;
+        }
+
+        .photo-item {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            border: 1px solid #e2e8f0;
+        }
+
+        .photo-item img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+
+        .photo-item img:hover {
+            transform: scale(1.05);
+        }
+
+        .photo-caption {
+            padding: 8px;
+            font-size: 0.85em;
+            color: #4a5568;
+            text-align: center;
+            background: #fff;
         }
 
         .tag {
@@ -233,14 +272,14 @@
     </header>
 
     <div class="executive-summary">
-        <strong>核心摘要：</strong> 本方案旨在填补学校现有 FRC 精英社团之外的“普及型创新”空白。通过分阶段投入、跟AP课程深度融合及视觉化成果展示，构建一个服务于 80% 师生的STEAM社团。
+        <strong>核心摘要：</strong> 本方案旨在填补学校现有 FRC 精英社团之外的“普及型创新”空白。通过跟AP课程深度融合及视觉化成果展示，构建一个服务于 80% 师生的创客社团，打造平和STEAM教育品牌。
     </div>
 
     <h2>一、 四大战略理由</h2>
 
     <div class="reason-card">
         <div class="reason-title"><span>1</span> 填补“创新金字塔”底层空白</div>
-        <p>FRC 是金字塔尖的精英俱乐部，而创客社团是塔基。目前 AP 学部约有 70 名学生渴望技术实践但难以深度参与 FRC 繁重的赛季项目。我们需要一个零门槛、多学科的普惠平台。</p>
+        <p>FRC机器人社团是金字塔尖的精英俱乐部，而创客社团是塔基。目前 AP 学部约有 70 名学生渴望技术实践但难以深度参与 FRC 繁重的赛季项目。我们需要一个零门槛、多学科的普惠平台。</p>
         <div class="quote-box">
             “我们要把科技变成像画笔一样的通用工具，让艺术生、人文生、理科生都能动手解决问题，实现教育普惠。”
         </div>
@@ -248,88 +287,100 @@
 
     <div class="reason-card">
         <div class="reason-title"><span>2</span> 完美契合学术刚需</div>
-        <p>社团创客空间将和AP课程深入融合。它为艺术、数学、物理、计算机课程提供跨学科的实践场景，让学生能够从“做”中学。我们会帮助同学将社会服务（Service）与艺术、科技造物结合。这不仅能让学生的论文质量产生质的飞跃，更是招生官眼中最具含金量的真实项目（Authentic Learning）。</p>
+        <p>社团创客空间将和AP课程深入融合。它为AP艺术、数学、物理、计算机课程提供跨学科的实践场景，让学生能够从“做”中学。我们会帮助同学将社会服务（Service）与艺术、科技造物结合。这不仅能让学生的论文质量产生质的飞跃，更是招生官眼中最具含金量的真实项目（Authentic Learning）。</p>
          <div class="quote-box">
             “平和学生要成为T字型人才。既有学术的广度，又能深入学科、解决实际问题。”
         </div>
     </div>
 
     <div class="reason-card">
-        <div class="reason-title"><span>3</span> 打造校园“未来教育”活景观</div>
-        <p>每一场校园开放日（Open Day），家长看重的不仅是硬件，更是学生动态的创造力。创客空间将陈列交互艺术装置、智能校园、3D 打印模型，成为学校招生最具说服力的广告。</p>
+        <div class="reason-title"><span>3</span> 树立顶级 STEAM 教育品牌标杆</div>
+        <p>创客空间不只是一个实验室，更是学校 STEAM 教育实力的“看板”。通过集中展示学生作品，我们将抽象的科技教育转化为极具感染力的视觉冲击。在校园开放日（Open Day）中，这一动态的创造力现场将成为学校科技品牌最强有力的证言，向家长与社会展示平和人在“人工智能+教育”时代的投入与成果</p>
+        
     </div>
-
-    <div class="reason-card">
-        <div class="reason-title"><span>4</span> 阶段性交付：降低财务风险</div>
-        <p>采用“里程碑式拨款”模式。不一次性投入巨资，而是通过“阶段成果解锁预算”，确保资金每一分都转化为学生的作品集（Portfolio）和学术变现。</p>
-    </div>
-
     
 
-    <h2>二、 分阶段预算规划 (Milestone Funding)</h2>
-    <p>为了优化资金使用效率，我们建议将预算分为以下三个解锁阶段：</p>
+    <h2>二、 创客空间综合预算规划 (Budget Plan)</h2>
+    <p>为了全面支持从基础教学到高阶研究和竞赛的各类需求，我们建议的设备配置方案：</p>
 
     <table>
         <thead>
             <tr>
-                <th>阶段</th>
-                <th>核心目标</th>
+                <th>设备类别</th>
                 <th>推荐器材清单</th>
-                <th>预估预算 (RMB)</th>
-                <th>理由/用途</th>
+                <th>用途说明</th>
+                <th>预估合计 (含20%冗余)</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td><strong>第一阶段 (启动期)</strong></td>
-                <td>普及入门 & 电子原型</td>
+                <td><strong>1. 边缘计算/单片机</strong></td>
                 <td>
-                    1. Arduino Uno / ESP32 基础套装 x 20<br>
-                    2. 传感器扩展包 (37合1) x 5<br>
-                    3. 树莓派 5 8G x 5 <br>
-                    4. 65英寸Skyworth大屏幕 x 1 <br>
-                    5. 微软Azure Kinnect DK 深度开发套件 x 1 <br>
-                    6. 基础电子工具（焊台、万用表、螺丝刀）
-                    7. 防静电工作台、设备储物柜
+                    * Arduino Uno / ESP32 基础套装 x 20<br>
+                    * 树莓派 5 8G x 5 
                 </td>
-                <td>¥30,000 - ¥32,000</td>
-                <td><strong>快速启动</strong><br>覆盖80%普通学生的“零基础”工作坊，支持基础科创项目。</td>
+                <td><strong>核心控制节点</strong><br>支持物联网、嵌入式开发及小型机器人原型。</td>
+                <td>¥9,000 - ¥11,400</td>
             </tr>
             <tr>
-                <td><strong>第二阶段 (升级期)</strong></td>
-                <td>数字化建模 & 景观展示</td>
+                <td><strong>2. 传感交互设备</strong></td>
                 <td>
-                    1. VEX V5 基础结构和动力套件 x 2 <br>
-                    2. 大象机器人myCobot 280 pi 六轴入门机械手臂 x 1 <br>
-                    3. 拓竹 (Bambu Lab) P1S 3D打印机 x 2 <br>
-                    4. 桌面级激光切割机 (xTool / Beambox) <br>
-                    5. 耗材（PLA线材、椴木板、合金）
-
+                    * 传感器扩展包 (37合1) x 5<br>
+                    * 深度相机 Intel RealSense D435i x 2 <br>
+                    * 气动/传动组件
                 </td>
-                <td>¥41,000 - ¥51,000</td>
-                <td><strong>视觉化成果</strong><br>可编程机器人、集成化机械臂、3D打印和激光切割能快速产出精美作品，用于校园展示和招生季门面。</td>
+                <td><strong>环境感知与反馈</strong><br>用于计算机视觉、空间建模及复杂机械结构控制。</td>
+                <td>¥6,000 - ¥9,600</td>
             </tr>
             <tr>
-                <td><strong>第三阶段 (成熟期)</strong></td>
-                <td>AI 机器人 & 进阶竞赛</td>
+                <td><strong>3. 可编程机器人/无人机</strong></td>
                 <td>
-                    1. 大疆 RoboMaster EP 套装 x 2<br>
-                    2. 深度相机/边缘计算模块 Intel Intel RealSense D435i 立体实感摄像头 x 2 <br>
-                    3. 气动/高级传动组件
+                    * 大疆 Tello Edu 教育无人机 x 2<br>
+                    * VEX AIM 可编程集成机器人 x 10<br>
+                    * VEX V5 基础结构和动力套件 x 2 <br>
+                    * 大象 myCobot 280 Pi 六轴机械手臂 x 1 <br>
+                    * 宇树机器狗 Go2 Air x 1
                 </td>
-                <td>¥20,000 - ¥50,000</td>
-                <td>满足高阶科创比赛需求，进行图像识别和自动驾驶研究。</td>
+                <td><strong>AP课程、竞赛与科创</strong><br>可编程无人机、VEX竞赛及仿生/协作机器人研究。</td>
+                <td>¥62,400 - ¥69,600</td>
+            </tr>
+            <tr>
+                <td><strong>4. 工程零件加工设备</strong></td>
+                <td>
+                    * 基础电子工具（焊台、万用表、螺丝刀）<br>
+                    * 防静电工作台<br>
+                    * 拓竹 (Bambu Lab) P1S 3D打印机 x 2 <br>
+                    * 桌面级激光切割机 (xTool / Beambox) <br>
+                    * 耗材（PLA线材、椴木板、合金）
+                </td>
+                <td><strong>物理加工</strong><br>从电路原型到复杂机械零件的快速加工与制造。</td>
+                <td>¥26,400 - ¥33,600</td>
+            </tr>
+            <tr>
+                <td><strong>5. 一般办公/配套设备</strong></td>
+                <td>
+                    * 65英寸 Skyworth 大屏幕 x 1 <br>
+                    * 设备储物柜
+                </td>
+                <td><strong>协作与展示</strong><br>用于方案讨论、代码演示及实验室规范化管理。</td>
+                <td>¥5,400 - ¥7,800</td>
+            </tr>
+            <tr>
+                <td colspan="3" style="text-align: right;"><strong>预估总预算 (Total Budget with 20% Buffer):</strong></td>
+                <td><strong>¥109,200 - ¥132,000</strong></td>
             </tr>
         </tbody>
     </table>
 
     <h2>三、 场地规划思路</h2>
-    <p>建议将[某楼闲置教室/角落]划分为四个核心功能区：</p>
+    <p><strong>基础环境要求：</strong> 为确保高精密设备（如3D打印机、激光切割机）及昂贵机器人（宇树机器狗、机械臂）的长期稳定运行，场地需满足：<strong>防尘、地板加固（承重支撑）、防静电（ESD防护）、防潮</strong>。</p>
+    <p>建议将[某楼闲置教室/角落]划分为五个核心功能区：</p>
     <ul>
-        <li><strong>电子焊接区：</strong> 严格遵循安全标准，进行电路原型开发。</li>
-        <li><strong>3D 打印加工区：</strong> 数字化造物的“核心引擎”。</li>
-        <li><strong>头脑风暴讨论区：</strong> 配备白板，进行跨学科方案碰撞。</li>
-        <li><strong>高光成果展示墙：</strong> 长期陈列学生作品，支持校园导览。</li>
+        <li><strong>电子焊接区：</strong> 严格遵循安全标准，进行电路原型开发及硬件调试。</li>
+        <li><strong>3D 打印加工区：</strong> 数字化造物的“核心引擎”，需具备良好通风。</li>
+        <li><strong>VEX 机器人训练区：</strong> 核心竞技空间，配备标准比赛场地，支持策略演练。</li>
+        <li><strong>编程/讨论区：</strong> 配备白板及大屏，进行算法设计、仿真及方案研讨。</li>
+        <li><strong>作品陈列区：</strong> 长期展示学生获奖作品及科创成果，作为品牌展示窗口。</li>
     </ul>
     <div class="diagram-container">
         <svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
@@ -378,8 +429,8 @@
   <!-- Brainstorming Discussion Area (Bottom Left) -->
   <g filter="url(#handDrawn)">
     <rect x="70" y="350" width="250" height="180" fill="#FFF5F5" stroke="#C53030" stroke-width="2" stroke-dasharray="5,5" />
-    <text x="80" y="375" font-family="Comic Sans MS, cursive, sans-serif" font-size="18" fill="#C53030">头脑风暴讨论区</text>
-    <text x="80" y="395" font-family="Arial" font-size="12" fill="#4A5568">Brainstorming &amp; Strategy</text>
+    <text x="80" y="375" font-family="Comic Sans MS, cursive, sans-serif" font-size="18" fill="#C53030">编程/讨论区</text>
+    <text x="80" y="395" font-family="Arial" font-size="12" fill="#4A5568">Brainstorming &amp; Programming</text>
     <!-- Round Table -->
     <circle cx="195" cy="460" r="45" fill="none" stroke="#4A5568" stroke-width="2" />
     <!-- Whiteboard -->
@@ -397,10 +448,15 @@
     <line x1="490" y1="500" x2="720" y2="500" stroke="#4A5568" stroke-width="2" />
   </g>
 
-  <!-- Central Open Space -->
+  <!-- VEX VRC Area (Center) -->
   <g filter="url(#handDrawn)">
-    <text x="350" y="300" font-family="Comic Sans MS, cursive, sans-serif" font-size="22" fill="#718096" opacity="0.5">开放式协作空间</text>
-    <text x="365" y="325" font-family="Arial" font-size="14" fill="#718096" opacity="0.5">Open Collaboration Space</text>
+    <rect x="325" y="210" width="150" height="160" fill="#EDF2F7" stroke="#2D3748" stroke-width="2" stroke-dasharray="5,5" />
+    <text x="335" y="235" font-family="Comic Sans MS, cursive, sans-serif" font-size="18" fill="#2D3748">VEX VRC 训练区</text>
+    <text x="335" y="255" font-family="Arial" font-size="12" fill="#4A5568">VEX VRC Training Area</text>
+    <!-- Field Layout -->
+    <rect x="345" y="270" width="110" height="85" fill="none" stroke="#4A5568" stroke-width="1" />
+    <line x1="345" y1="312.5" x2="455" y2="312.5" stroke="#4A5568" stroke-width="1" />
+    <line x1="400" y1="270" x2="400" y2="355" stroke="#4A5568" stroke-width="1" />
   </g>
 
   <!-- Title -->
@@ -413,6 +469,43 @@
 
 </svg>
     </div>
+
+    <h3>参考场地规划</h3>
+    <div class="photo-gallery">
+        <div class="photo-item">
+            <img src="photos/219.JPG" alt="Reference 1">
+            <div class="photo-caption">场地实拍1</div>
+        </div>
+        <div class="photo-item">
+            <img src="photos/228.JPG" alt="Reference 2">
+            <div class="photo-caption">场地实拍2</div>
+        </div>
+        <div class="photo-item">
+            <img src="photos/278.JPG" alt="Reference 3">
+            <div class="photo-caption">场地实拍3</div>
+        </div>
+        <div class="photo-item">
+            <img src="photos/279.JPG" alt="Reference 4">
+            <div class="photo-caption">场地实拍4</div>
+        </div>
+        <div class="photo-item">
+            <img src="photos/285.JPG" alt="Reference 5">
+            <div class="photo-caption">场地实拍5</div>
+        </div>
+        <div class="photo-item">
+            <img src="photos/286.JPG" alt="Reference 6">
+            <div class="photo-caption">场地实拍6</div>
+        </div>
+        <div class="photo-item">
+            <img src="photos/IMG_3093.JPG" alt="Reference 7">
+            <div class="photo-caption">场地实拍7</div>
+        </div>
+        <div class="photo-item">
+            <img src="photos/IMG_3094.JPG" alt="Reference 8">
+            <div class="photo-caption">场地实拍8</div>
+        </div>
+    </div>
+
     <div class="slogan-box">
         <div class="slogan-text">赋能下一代创造者</div>
     </div>
